@@ -1,7 +1,8 @@
-import Description from './components/Description/Description';
-import Options from './components/Options/Options';
-import Feedback from './components/Feedback/Feedback';
-import Notification from './components/Notification/Notification';
+import React from 'react';
+import Description from './Description/Description';
+import Options from './Options/Options';
+import Feedback from './Feedback/Feedback';
+import Notification from './Notification/Notification';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
   const updateFeedback = feedbackType =>
     setComment(prev => ({ ...prev, [feedbackType]: prev[feedbackType] + 1 }));
 
-  const ressetFeedback = () =>
+  const resetFeedback = () =>
     setComment({
       good: 0,
       neutral: 0,
@@ -42,7 +43,7 @@ function App() {
       <Options
         updateFeedback={updateFeedback}
         totalFeedback={totalFeedback}
-        ressetFeedback={ressetFeedback}
+        resetFeedback={resetFeedback}
       />
       {totalFeedback > 0 && (
         <Feedback
