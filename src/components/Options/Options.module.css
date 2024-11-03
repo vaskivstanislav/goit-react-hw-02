@@ -1,0 +1,50 @@
+.btnBox {
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .commentBtn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px gray;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+  }
+  
+  .btnBox .commentBtn:nth-child(1) {
+    background-color: #fff; /* білий */
+    color: #000; /* чорний текст */
+    border: 1px solid #000; /* чорна рамка */
+    &:hover {
+      background-color: #e0e0e0; /* світло-сірий при наведенні */
+    }
+  }
+  .btnBox .commentBtn:nth-child(2) {
+    background-color: #fff; /* білий */
+    color: #000; /* чорний текст */
+    border: 1px solid #000; /* чорна рамка */
+    &:hover {
+      background-color: #e0e0e0; /* світло-сірий при наведенні */
+    }
+  }
+  .btnBox .commentBtn:nth-child(3) {
+    background-color: #fff; /* білий */
+    color: #000; /* чорний текст */
+    border: 1px solid #000; /* чорна рамка */
+    &:hover {
+      background-color: #e0e0e0; /* світло-сірий при наведенні */
+    }
+  }
+  .btnBox .commentBtn:nth-child(4) {
+    background-color: #fff; /* білий */
+    color: #000; /* чорний текст */
+    border: 2px solid #000; /* чорна рамка */
+    &:hover {
+      background-color: #ccc; /* світло-сірий при наведенні */
+    }
+  }
