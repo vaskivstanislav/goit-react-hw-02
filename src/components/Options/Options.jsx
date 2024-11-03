@@ -1,6 +1,6 @@
 import s from './Options.module.css';
 
-const Options = ({ updateFeedback, totalFeedback, ressetFeedback }) => {
+const Options = ({ updateFeedback, totalFeedback, resetFeedback }) => {
   return (
     <div className={s.btnBox}>
       <button className={s.commentBtn} onClick={() => updateFeedback('good')}>
@@ -16,7 +16,7 @@ const Options = ({ updateFeedback, totalFeedback, ressetFeedback }) => {
         Bad
       </button>
       {totalFeedback > 0 && (
-        <button className={s.commentBtn} onClick={ressetFeedback}>
+        <button className={s.commentBtn} onClick={resetFeedback}>
           Reset
         </button>
       )}
